@@ -99,6 +99,8 @@ p {
 a { 
     color: $anchor-color; }
 
+.test { border:1px dashed $pink}
+
 .special-line { 
     border-bottom: 2px solid $pink; }
 

@@ -1415,6 +1415,10 @@ a {
   color: #cc0033;
 }
 
+.test {
+  border: 1px dashed #cc0033;
+}
+
 .special-line {
   border-bottom: 2px solid #cc0033;
 }
