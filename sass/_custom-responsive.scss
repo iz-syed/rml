@@ -1,0 +1,19 @@
+// Customresponsive
+
+@media (min-width: $break-sm) {
+	
+	.max-70 {
+		max-width:70%; 
+		margin:0 auto; }
+
+
+ } // min width 768 px
+
+
+@media (max-width: $break-sm) {
+	
+	.tab-center { text-align:center}
+}
+
+
+

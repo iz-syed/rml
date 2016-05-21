@@ -1,0 +1,45 @@
+// $bootstrap-sass-asset-helper: false !default;
+
+//== Colors
+
+$white: 					#ffffff;
+$black: 					#000000;
+$pink: 						#cc0033;
+$gray: 						#4e5659;
+$yellow: 					#f3ca18;
+$blue: 						#3ab3bd;
+// $red:;
+$text-color:				#282929;
+$anchor-color:				$pink !default;
+
+
+$body-bg: 					#fff !default;
+
+$link-color: 				$pink !default;
+
+$link-hover-decoration:		none !default;
+
+//== Typography
+//## Font
+
+$font-family-roboto:	  	"Roboto Condensed", Helvetica, Arial, sans-serif !default;
+$font-family-base: 			"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-size-base: 			10px;
+$line-height-base: 			18px;
+
+$page-title-base:			$font-family-roboto !default;
+$page-title-size-base: 			3em;
+$page-sub-title-size-base: 		3em;
+$page-title-line-height-base: 	4em;
+$page-title-color:			$pink !default;
+$page-padding:				100px 0 100px 0;
+
+// Media Quries
+
+$break-lg: 1200px;
+$break-md: 992px;
+$break-sm: 768px;
+$break-xs: 767px;
+
+
+

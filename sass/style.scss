@@ -1,0 +1,296 @@
+
+// google Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+
+// Bootsstrap structure
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/grid";
+
+@import "compass";
+
+// Slick Slider
+@import "slick"; 
+
+// Custom Variables
+@import "custom-variables";
+
+// Custom Mixins
+@import "custom-mixins";
+
+// Custom Responsive
+@import "custom-responsive";
+
+/* Common css */
+.clearfix {
+  &:before,
+  &:after {
+      content: "";
+      display: table; }
+  &:after {
+      clear: both; }
+}
+.center-block {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:0px;
+    padding-right:0px; }
+
+.row .center-block {
+	 padding-left:15px;
+	 padding-right:15px; }
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+
+.force-left { 
+    float:left; }
+
+.force-right { 
+    float:right; }
+
+.text-center { 
+    text-align:center; }
+
+.text-right { 
+    text-align:right; }
+
+.text-left { 
+    text-align:left; }
+a, 
+a:focus, 
+input:focus, 
+textarea:focus, 
+select:focus { 
+    outline:none; text-decoration:none; }
+
+img { 
+  max-width:100%; vertical-align:middle; }
+
+figure {
+  margin:0;}
+
+dl, dt, dd { margin:0; }
+
+blockquote, ul, li, h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
+
+li { list-style:none; }
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $text-color;
+    background-color: $body-bg; }
+
+p {
+    color:$text-color;
+    font-size:1.6em;
+    line-height: 22px; }
+
+a { 
+    color: $anchor-color; }
+
+.special-line { 
+    border-bottom: 2px solid $pink; }
+
+.highlight { background-color: $pink; color:$white; padding:0 3px 2px}
+
+.text-center .img-responsive { display: inline-block}
+
+h3 {
+    font-family: $page-title-base;
+    font-size: $page-title-size-base;
+    line-height: $page-title-line-height-base;
+    color: $page-title-color;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1; }
+
+
+h3:before {
+    content: attr(data-title); 
+    color:rgba($black, 0.1);
+    position: absolute;
+    font-size:100px;
+    font-weight:700;
+    left:0;
+    right:0;
+    z-index: -1;
+
+    @media (max-width: $break-xs)  {
+      font-size:60px; } 
+}
+
+h4 {
+    font-family: $page-title-base;
+    font-size: $page-title-size-base;
+    color: $page-title-color;
+    text-transform: uppercase;
+    padding:45px 0; }
+
+
+  .top-gutter { 
+    padding-top:75px;
+
+    @media (max-width: $break-sm) {
+      padding-top:25px;  
+    }
+  }
+
+.gutter { 
+
+  p {
+      padding-bottom: 30px;
+  }
+}
+
+b, strong { font-weight:bold; color:$pink}
+
+// PDF Style 
+
+.pdf-wrapper { 
+    padding: 45px 0; }
+
+.pdf-holder { 
+    text-align: left; 
+    display: block; 
+    border:1px solid rgba($gray, 0.3); 
+    margin-bottom:15px;
+    font-size:1.6em;
+    line-height: 22px;
+    min-height: 100px;
+    padding:25px 0 25px 70px;
+    background:transparent url(../images/icons/pdf.png) no-repeat 10px center;
+    background-size: 55px;
+    @include border-radius(10px);
+
+      &:hover {
+        background:rgba($pink, 0.1) url(../images/icons/pdf.png) no-repeat 10px center ;
+        border-color: $pink;
+        background-size: 55px;
+        
+        // color:$white;
+      }
+
+     }
+
+.custom-pdf-holder { padding:15px 0 15px 70px}
+
+
+// Services 
+
+#services {
+    background-color: rgba($yellow, 0.1);
+    padding:$page-padding;
+}
+
+.service-box-wrapper { 
+    padding:50px 0;
+}
+
+.service-box {
+ 
+    @media (max-width: $break-sm)  {
+          margin-bottom:30px;
+    } // Break-sm
+}
+
+
+.service-box figcaption { 
+  background-color: $pink;
+  color: #fefae7;
+  padding:35px 0 20px 0;
+  font-size:1.8em;
+  line-height: 1.2em;
+
+    @media (max-width: $break-sm)  {
+      min-height: 100px;
+    } // break-sm
+
+ }
+
+ .overlay { position: relative;}
+ .overlay:before { 
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba($black, 0.5);
+  }
+
+  .overlay:after {
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:85%;
+    height:80%;
+    margin:auto;
+    border:2px solid rgba($white, 0.2); }
+
+  .big-mail-button {
+    color:$pink;
+    font-size:3em;
+    display: inline-block;
+    min-width:300px;
+    border:1px solid $pink;
+    padding:10px 25px;
+    font-weight: 700;
+    font-family: $font-family-roboto;
+    line-height:.9em;
+    background:url(../images/icons/mailto.png) no-repeat left center;
+    padding-left:70px;
+    
+    @include border-radius(45px);
+    
+    span {
+      color:$black;
+      font-size:0.8em;
+      display: block;
+      font-weight:normal;
+
+        @media (max-width: $break-xs)  {
+          font-size:0.6em;
+        }
+
+    }
+
+  }
+
+
+
+ // Customers & Agents
+
+#customers, #agents {
+    background-color: rgba($white, 0.1);
+    padding:$page-padding;
+}
+
+// carriers
+#carriers {
+    background-color: rgba($blue, 0.1);
+    padding:$page-padding;
+}
+
+// Agents 
+
+
+  
+
+
+
+
