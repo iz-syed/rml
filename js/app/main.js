@@ -26,4 +26,7 @@ $(window).on("orientationchange",function(){
 
 console.log("working fine!");
 
+
+
+
 });

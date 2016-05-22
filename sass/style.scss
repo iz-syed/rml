@@ -275,11 +275,12 @@ b, strong { font-weight:bold; color:$pink}
 
 
 
- // Customers & Agents
+ // Customersm Agents & Employment
 
-#customers, #agents {
+#customers, #agents, #employment {
     background-color: rgba($white, 0.1);
     padding:$page-padding;
+    min-height:$full-height;
 }
 
 // carriers
@@ -288,8 +289,40 @@ b, strong { font-weight:bold; color:$pink}
     padding:$page-padding;
 }
 
-// Agents 
+// Available Loads 
 
+#available-loads {
+	background-color: rgba($gray, 0.1);
+    padding:$page-padding;
+}
+
+.iframe-wrapper { 
+	border:1px solid rgba($black, 0.1);
+	min-height:500px;
+	@include box-shadow(0, 1px, 100px, rgba($black, 0.5));
+	position: relative;
+	margin-top:45px;
+	margin-bottom:45px;
+	
+	&:before { 
+		
+		content: attr(data-404); 
+		color:$pink;
+		font-family:$font-family-roboto;
+		font-size: 3em;
+		line-height: 36px;
+		position: absolute;
+		width:50%;
+		height:80px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin:auto;
+
+	}
+
+	}
 
   
 

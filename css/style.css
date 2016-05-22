@@ -1600,12 +1600,44 @@ b, strong {
   }
 }
 
-#customers, #agents {
+#customers, #agents, #employment {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 100px 0 100px 0;
+  min-height: 100vh;
 }
 
 #carriers {
   background-color: rgba(58, 179, 189, 0.1);
   padding: 100px 0 100px 0;
+}
+
+#available-loads {
+  background-color: rgba(78, 86, 89, 0.1);
+  padding: 100px 0 100px 0;
+}
+
+.iframe-wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 500px;
+  -webkit-box-shadow: 0 1px 100px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 100px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 100px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.iframe-wrapper:before {
+  content: attr(data-404);
+  color: #cc0033;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  line-height: 36px;
+  position: absolute;
+  width: 50%;
+  height: 80px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
