@@ -1641,3 +1641,36 @@ b, strong {
   bottom: 0;
   margin: auto;
 }
+
+#contact {
+  background-color: rgba(204, 0, 51, 0.1);
+  padding: 100px 0 100px 0;
+}
+
+.address-bar {
+  background-color: rgba(78, 86, 89, 0.1);
+  border: 1px solid rgba(78, 86, 89, 0.2);
+  min-height: 210px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding-left: 100px;
+}
+
+.contact-address address, .contact-email a {
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #cc0033;
+}
+
+.phone {
+  color: 24px;
+  line-height: 32px;
+  color: #cc0033;
+}
+
+.phone:before {
+  content: attr(data-title);
+}

@@ -324,6 +324,48 @@ b, strong { font-weight:bold; color:$pink}
 
 	}
 
+  // Contact
+
+  #contact {
+    background-color: rgba($pink, 0.1);
+    padding:$page-padding;
+}
+
+.address-wrapper {
+
+}
+
+.address-bar {
+  background-color: rgba($gray, 0.1);
+  border:1px solid rgba($gray, 0.2);
+  min-height:210px;
+  @include border-radius(10px);
+  padding-left:100px;
+}
+
+
+
+.contact-address address, .contact-email a {
+
+  font-family:$font-family-roboto;
+  font-size:16px;
+  line-height:22px;
+  color:$pink;
+
+}
+
+.contact-email a
+ {
+
+}
+
+.phone {
+  color:24px; line-height:32px; color:$pink;
+}
+.phone:before {
+  content: attr(data-title);
+}
+
   
 
 
