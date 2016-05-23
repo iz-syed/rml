@@ -8,6 +8,7 @@
 @import "bootstrap/normalize";
 @import "bootstrap/print";
 @import "bootstrap/grid";
+@import "bootstrap/tables";
 
 @import "compass";
 
@@ -98,6 +99,8 @@ p {
 
 a { 
     color: $anchor-color; }
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {     font-size:1.6em; line-height: 22px;}
 
 .test { border:1px dashed $pink;}
 
@@ -336,17 +339,32 @@ b, strong { font-weight:bold; color:$pink}
 }
 
 .address-bar {
-  background-color: rgba($gray, 0.1);
-  border:1px solid rgba($gray, 0.2);
+  // background-color: rgba($gray, 0.1);
+  border:1px solid rgba($yellow, 0.2);
   min-height:210px;
   @include border-radius(10px);
-  padding-left:100px;
+   @media (min-width: $break-sm)  {
+    padding-left:130px;
+  }
 }
 
+.contact-address {
+  padding-top: 75px;
+  background:rgba($yellow, 0.1) url(../images/icons/location.png) no-repeat left center;
+}
 
+.contact-phone {
+  padding-top: 35px;
+ // padding-left: 150px;
+  background:rgba($yellow, 0.1) url(../images/icons/contact.png) no-repeat left center;
+}
 
-.contact-address address, .contact-email a {
+.contact-email {
+  padding-top: 100px;
+  background:rgba($yellow, 0.1) url(../images/icons/mailto-white.png) no-repeat left center;
+}
 
+.contact-address address {
   font-family:$font-family-roboto;
   font-size:16px;
   line-height:22px;
@@ -354,17 +372,38 @@ b, strong { font-weight:bold; color:$pink}
 
 }
 
+.contact-email a {
+  font-family:$font-family-roboto;
+  font-size:16px;
+  line-height:22px;
+  color:$pink; }
+
 .contact-email a
  {
 
 }
 
 .phone {
-  color:24px; line-height:32px; color:$pink;
-}
+  font-size:24px; 
+  line-height:42px; 
+  color:$pink; 
+  position: relative; }
 .phone:before {
   content: attr(data-title);
-}
+  font-size:12px;
+  text-transform:uppercase;
+  top:18px;
+  left:2px;
+  position: absolute;
+  color:$gray; }
+
+.staff-wrapper { margin:50px 0;}
+.staff-wrapper .table-responsive{ 
+  background-color: $white;
+  border:1px solid rgba($black, 0.1);
+  @include box-shadow(0, 1px, 100px, rgba($black, 0.5)); }
+
+.staff-wrapper h4 { padding-bottom:25px;}
 
   
 
