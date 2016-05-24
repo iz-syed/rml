@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="MobileOptimized" content="width">
+
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>R &amp; M Logistics</title>
 <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
@@ -11,9 +16,8 @@
 
 <!-- Google Fonts -->
 
-<!-- Theme Style -->
+<!-- Page Style -->
 <link href="css/style.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
 <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.8.3.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,14 +33,43 @@
 
 <body>
 
-<div class="header test">
-	<a href="#services">services</a>
-	<a href="#customers">customers</a>
-	<a href="#carriers">carriers</a>
-	<a href="#agents">agents</a>
-	<a href="#available-loads">available-loads</a>
-	<a href="#employment">employment</a>
+ <div class="header">
+	<div class="container">
+		<div class="col-sm-3">
+			<h1>
+				<a href="index.html">
+					<img src="images/logo.png" alt="" class="img-responsive" />
+				</a>
+			</h1>
+		</div>
+		<div class="col-sm-9">
+			<nav class="navigation text-right">
+				<ul>
+					<li><a href="#home" title="Home">Home</a></li>
+					<li><a href="#services" title="Services">Services</a></li>
+					<li><a href="#customers" title="Customers">Customers</a></li>
+					<li><a href="#carriers" title="Carriers">Carriers</a></li>
+					<li><a href="#agents" title="Agents">Agents</a></li>
+					<li><a href="#available-loads" title="Avilable Loads">Available Loads</a></li>
+					<li><a href="#employment" title="Employment">Employment</a></li>
+					<li><a href="#contact" title="Contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div> 
+
+ 
+<div class="sections" id="home">
+    <div id="preloader"></div>
+    <div id="slides">
+        <div class="slides-container">
+            <div class="slide"><img src="images/home/banner//banner1.jpg" alt=""><div class="slide-description text-center"><h1>We Move Freight <br />Throughout The United States And Canada</h1></div></div>
+            <div class="slide"><img src="images/home/banner//banner2.jpg" alt=""><div class="slide-description text-center"><h1>We Move Freight <br />Throughout The United States And Canada</h1></div></div>
+        </div>
+    </div>
 </div>
+
 
 <div id="services">
 	<div class="container text-center">
@@ -122,7 +155,8 @@
 
 		<div class="clearfix text-center">
 			<h4>Customer Package</h4>
-			<p>Download our <a href="_downloads/customer-package/customer_pack.zip" class="special-line">customer package</a> <span class="highlight">zip</span> and contact our Sales Department at <b>877.437.7209</b>.</p>
+			<p>Download our <a href="_downloads/customer-package/customer_pack.zip" class="special-line">customer package</a> <span class="highlight">zip</span> and contact our Sales Department at <b>877.437.7209</b>.
+			</p>
 
 			<div class="col-xs-12 pdf-wrapper">
 				<div class="row">
@@ -254,7 +288,7 @@
 	<div class="container">
 		<h3 data-title="Contact">Contact</h3>
 
-		<div class="address-wrapper">
+		<div class="address-wrapper clearfix">
 			<div class="col-md-4">
 				<div class="contact-address address-bar">
 					<address>
@@ -319,20 +353,20 @@
                         </td><td>843.662.9559</td>
                     	<td>104</td>
                     </tr>
-            <tr valign="top">
+            		<tr valign="top">
                     	<td>Chandler Merck</td>
                     	<td>Transportation Account Manager</td>
                         <td>843.662.9559</td> 
                     	<td>103</td>
 
                     </tr>
-			<tr valign="top" class="altRow">
+					<tr valign="top" class="altRow">
                     	<td>Crystal McMillian</td>
                     	<td>Transportation Account Manager</td>
                         <td>843.662.9559</td> 
                     	<td>105</td>
                     </tr>
-		<tr valign="top">
+					<tr valign="top">
                     	<td>Kim Sweitzer</td>
                     	<td>Transportation Account Manager</td>
                         <td>843.662.9559</td>
@@ -345,16 +379,33 @@
                     	<td>843-629-8550</td>
                         <td>x</td>
                     </tr>
-		
 				</tbody>
-			      
-			    </tbody>
 			  </table>
 			</div>
 		</div>
 	</div>
 </div>
 
+<div class="footer">
+	<div class="max-70">
+		<div class="member-logo center-block text-center">
+			<img src="images/icons/active-member.png" class="img-responsive" alt="Member Logo" />
+		</div>
+		<div class="text-center">
+			<p>&copy; 2002 - 2016 <b>R &amp; M Logistics</b>, Inc. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Weather
+1513 Heritage Lane</a>, <a href="#">Florence</a>, <br /><a href="#">South Carolina 29505</a> | <a href="#">Email R &amp; M Logistics</a> | T: <b>877.437.7209</b></p>
+<p>Design by <a href="http://www.heritagedigital.com/" target="_blank">Heritage Digital</a></p>
+		</div>
+
+	</div>
+</div>
+
 <script data-main="js/app" src="js/lib/require.js"></script>
+
+<script src="_js/plugin.js"></script>
+<script src="_js/jquery.superslides.js"></script>
+<script src="_js/chosen.jquery.js"></script>
+<script src="_js/smoothscroll.js"></script>
+<script src="_js/common.js"></script>
 </body>
 </html>

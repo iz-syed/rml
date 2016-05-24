@@ -1,4 +1,4 @@
-define(["jquery","bootstrap.min","smoothscroll","appeared","jquery.matchHeight-min","slick.min"], function($){
+define(["jquery","bootstrap.min","smoothscroll","appeared","jquery.matchHeight-min"], function($){
 /* Functions */
 window.onbeforeunload = function(){
 	window.scrollTo(0,0);
@@ -28,5 +28,14 @@ console.log("working fine!");
 
 
 
+// Fullwidth Slider
+$(window).scroll(function(){
+		var winH = $(window).height();
+		var secH = $('#slideContainer').innerHeight()-50;
+		var winW = $(window).width();
+		
+	});  // Full width Slider
 
-});
+
+
+// });

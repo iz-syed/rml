@@ -13,7 +13,8 @@
 @import "compass";
 
 // Slick Slider
-@import "slick"; 
+// @import "slick"; 
+
 
 // Custom Variables
 @import "custom-variables";
@@ -44,6 +45,9 @@
 .row .center-block {
 	 padding-left:15px;
 	 padding-right:15px; }
+
+.center-block.text-center { text-align:center }
+.center-block.text-center img { display:inline-block}
 
 *,
 *:before,
@@ -191,6 +195,62 @@ b, strong { font-weight:bold; color:$pink}
 
 .custom-pdf-holder { padding:15px 0 15px 70px}
 
+// Header
+.header {  
+    @include background-image(linear-gradient(#000, transparent)); 
+    position: fixed; 
+    left:0; 
+    right:0; 
+    z-index: 999;}
+
+.navigation li { 
+  display:inline-block; 
+   margin:0 5px;
+    
+    a {
+      text-transform:uppercase; 
+      font-size:14px; 
+      line-height:66px; 
+      font-family:$font-family-roboto; 
+      color:$white
+    }
+
+     }
+
+// Slider
+
+.slide { 
+    position: relative;
+    z-index: 8;
+    
+    &:before {
+      
+      content:"0";
+      color:$white;
+       @include background-image(linear-gradient(to right, $pink, transparent));
+      width:$full;
+      height:$full;
+      position: absolute;
+      z-index: 2;
+    }
+  }
+
+.slide-description { 
+  position: absolute; 
+  left:0; 
+  right:0; 
+  top:50%; 
+  margin:0 auto; 
+  color:$yellow;
+  font-family:$font-family-roboto;
+  font-weight:300;
+  font-size:24px;
+  line-height:36px;
+  text-transform:capitalize;
+  z-index: 9;
+   }
+
+
 
 // Services 
 
@@ -335,7 +395,7 @@ b, strong { font-weight:bold; color:$pink}
 }
 
 .address-wrapper {
-
+padding-top:45px;
 }
 
 .address-bar {
@@ -404,6 +464,9 @@ b, strong { font-weight:bold; color:$pink}
   @include box-shadow(0, 1px, 100px, rgba($black, 0.5)); }
 
 .staff-wrapper h4 { padding-bottom:25px;}
+
+.footer { padding:45px 0}
+.member-logo { padding-bottom:45px;}
 
   
 
