@@ -57,18 +57,28 @@
 			</nav>
 		</div>
 	</div>
-</div> 
+</div>
 
  
 <div class="sections" id="home">
     <div id="preloader"></div>
     <div id="slides">
         <div class="slides-container">
-            <div class="slide"><img src="images/home/banner//banner1.jpg" alt=""><div class="slide-description text-center"><h1>We Move Freight <br />Throughout The United States And Canada</h1></div></div>
-            <div class="slide"><img src="images/home/banner//banner2.jpg" alt=""><div class="slide-description text-center"><h1>We Move Freight <br />Throughout The United States And Canada</h1></div></div>
+            <div class="slide"><img src="images/home/banner/banner1.jpg" alt="">
+            	<div class="slide-description text-center">
+            		<h1>We Move Freight <br />Throughout The United States And Canada</h1>
+            		<button class="animated fadeIn">Request A Rate</button>
+            	</div>
+            </div>
+            <div class="slide"><img src="images/home/banner/banner2.jpg" alt="">
+            		<div class="slide-description text-center">
+            			<h1>We Move Freight <br />Throughout The United States And Canada</h1>
+            			<button>Request A Rate</button>
+            		</div>
         </div>
     </div>
 </div>
+
 
 
 <div id="services">
@@ -392,20 +402,57 @@
 			<img src="images/icons/active-member.png" class="img-responsive" alt="Member Logo" />
 		</div>
 		<div class="text-center">
-			<p>&copy; 2002 - 2016 <b>R &amp; M Logistics</b>, Inc. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Weather
-1513 Heritage Lane</a>, <a href="#">Florence</a>, <br /><a href="#">South Carolina 29505</a> | <a href="#">Email R &amp; M Logistics</a> | T: <b>877.437.7209</b></p>
-<p>Design by <a href="http://www.heritagedigital.com/" target="_blank">Heritage Digital</a></p>
+			<p>&copy; 2002 - 2016 <b><a href="index.html">R &amp; M Logistics</a></b>, Inc. All Rights Reserved. | <a id="Privacy" href="javascript:void(0);">Privacy Policy</a> | <a href="https://weather.com/" target="_blank">Weather</a> | <a href="http://maps.google.com/maps?f=q&hl=en&q=1513+Heritage+Lane,+Florence,+South+Carolina+29505" target="_blank">
+1513 Heritage Lane</a>, <a href="#">Florence</a>, <br /><a href="#">South Carolina 29505</a> | <a href="mailto:ronl@rmlogistics.com?Subject=Email Response from Internet Site" title="ronl@rmlogistics.com">Email R &amp; M Logistics</a> | T: <b>877.437.7209</b></p>
+<p>Design by <a href="http://www.heritagedigital.com/" title="Heritage Digital | Internet, Extranet &amp; Intranet Developer" target="_blank">Heritage Digital</a></p>
 		</div>
 
 	</div>
 </div>
 
-<script data-main="js/app" src="js/lib/require.js"></script>
+<!--  Modal box pages -->
+<div class="clearfix test">
+	<!-- Privacy Policy -->
+	<div id="myModal" class="modal"> 
+  	<!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">×</span>
+	    <h4>Privacy Policy</h4>
+	    <p> <b>R &amp; M Logistics</b>  respects your privacy. Information submitted from this site is not sold to any other party and is used exclusively to serve our customers.</p>
+	    <p>Information on this site is protected. This site is provided for the exclusive use of our visitors. All information on this site is protected by copyright by <b>R &amp; M Logistics</b>.</p>
+	  </div>
+	</div> <!-- Privacy Policy -->
+
+</div>
+
+<!-- <script data-main="js/app" src="js/lib/require.js"></script> -->
 
 <script src="_js/plugin.js"></script>
 <script src="_js/jquery.superslides.js"></script>
 <script src="_js/chosen.jquery.js"></script>
 <script src="_js/smoothscroll.js"></script>
 <script src="_js/common.js"></script>
+
+<script>
+	// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("Privacy");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+</script>
 </body>
 </html>

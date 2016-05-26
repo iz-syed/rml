@@ -11,6 +11,7 @@
 @import "bootstrap/tables";
 
 @import "compass";
+//@import "animate-sass/animate";
 
 // Slick Slider
 // @import "slick"; 
@@ -225,7 +226,7 @@ b, strong { font-weight:bold; color:$pink}
     
     &:before {
       
-      content:"0";
+      content:"";
       color:$white;
        @include background-image(linear-gradient(to right, $pink, transparent));
       width:$full;
@@ -239,16 +240,57 @@ b, strong { font-weight:bold; color:$pink}
   position: absolute; 
   left:0; 
   right:0; 
-  top:50%; 
+  top:40%; 
   margin:0 auto; 
   color:$yellow;
   font-family:$font-family-roboto;
   font-weight:300;
-  font-size:24px;
+  font-size:1.6em;
   line-height:36px;
   text-transform:capitalize;
   z-index: 9;
+
+    h1 {
+      position: relative;
+      margin-bottom:100px;
+      &:before {
+        content:'';
+        position: absolute;
+        width:100px;
+        height:6px;
+        background:$white;
+        bottom:-15px;
+        left:0;
+        right:0;
+        margin:0 auto;
+      }
+    }
+
+    button {
+        @include border-radius(45px);
+        background-color:$yellow;
+        color:$black;
+        border:0;
+        padding:5px 65px;
+        font-size:18px;
+        font-weight:bold;
+        position: relative;
+        
+        &:before {
+          content:'';
+          background:url(../images/icons/request.png) no-repeat left center;
+          width:75px;
+          height: 65px;
+          position: absolute;
+          top:- 55px;
+          left:0;
+          right:0;
+          margin:0 auto;
+        }
+      }
+
    }
+
 
 
 
@@ -467,6 +509,62 @@ padding-top:45px;
 
 .footer { padding:45px 0}
 .member-logo { padding-bottom:45px;}
+
+
+// Modal Page
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: $black; /* Fallback color */
+    background-color: rgba($black, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: $white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: $one-third;
+    height:$one-third;
+
+    h4 {
+      color:$pink;
+      background-color:rgba($pink, .3);
+      margin:-20px -20px 20px -20px;
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    p {
+      color:$black;
+    }
+}
+
+/* The Close Button */
+.close {
+    color: $white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: $black;
+    text-decoration: none;
+    cursor: pointer;
+}
+// Static Page
+
 
   
 

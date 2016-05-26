@@ -1691,7 +1691,7 @@ b, strong {
   z-index: 8;
 }
 .slide:before {
-  content: "0";
+  content: "";
   color: #ffffff;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjMDAzMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -1709,15 +1709,54 @@ b, strong {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 40%;
   margin: 0 auto;
   color: #f3ca18;
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.6em;
   line-height: 36px;
   text-transform: capitalize;
   z-index: 9;
+}
+.slide-description h1 {
+  position: relative;
+  margin-bottom: 100px;
+}
+.slide-description h1:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 6px;
+  background: #ffffff;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.slide-description button {
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  border-radius: 45px;
+  background-color: #f3ca18;
+  color: #000000;
+  border: 0;
+  padding: 5px 65px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+.slide-description button:before {
+  content: '';
+  background: url(../images/icons/request.png) no-repeat left center;
+  width: 75px;
+  height: 65px;
+  position: absolute;
+  top: -55px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 #services {
@@ -1937,4 +1976,63 @@ b, strong {
 
 .member-logo {
   padding-bottom: 45px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 75%;
+  height: 75%;
+}
+.modal-content h4 {
+  color: #cc0033;
+  background-color: rgba(204, 0, 51, 0.3);
+  margin: -20px -20px 20px -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.modal-content p {
+  color: #000000;
+}
+
+/* The Close Button */
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
 }
